@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เค้ามีอะไรจะบอก</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="step1" class="step-content active">
+            <div class="gif-container">
+                <img src="https://media.tenor.com/IQb48qaui1AAAAAM/love.gif" alt="gift box">
+            </div>
+            <h1>เค้ามีอะไรจะให้ดู จิ้มหน่อยนะครับ...</h1>
+            <button class="main-btn" onclick="nextStep(2)">กดเปิดตรงนี้เลย</button>
+        </div>
+
+        <div id="step2" class="step-content">
+            <div class="gif-container">
+                <img src="https://i.pinimg.com/originals/ce/3c/49/ce3c4949f67eca433927e02e5f857a0f.gif" alt="sorry cat">
+            </div>
+            <h2>เค้าขอโทษนะ...</h2>
+            <p class="apology-text">
+                เค้าคิดดีแล้ว... เค้าไม่อยากเลิกคุยกับเตยเลยนะเลย วันนั้นเค้าผิดเอง  <br>
+                ช่วงเวลาที่ไม่ได้คุยกัน เค้าคิดถึงเตยตลอดเลยนะ มันเหงามาก และทำให้เค้ารู้เลยว่าเตยสำคัญกับเค้าแค่ไหน  เค่้าจะไม่พูดว่าเลิกคุยกันง่ายๆแล้ว
+                ผิดไปแล้วจริงๆ ต่อไปนี้จะดื้อให้น้อยลง จะใส่ใจเตยละก็ตัวเองให้มากๆ นะ <br>
+                ยกโทษให้เค้าได้มั้ยเตยย
+            </p>
+            <button class="main-btn" onclick="nextStep(3)">อ่านต่อตรงนี้ </button>
+        </div>
+
+        <div id="step3" class="step-content">
+            <div class="gif-container">
+                <img id="finalGif" src="https://topicstock.pantip.com/chalermkrung/topicstock/2010/08/C9565033/C9565033-0.gif" alt="asking cat">
+                
+            </div>
+            <h1 id="finalTitle">ตกลงเราดีกันมั้ยครับบบ ? </h1>
+            
+            <div class="btn-group">
+                <button id="yesBtn" onclick="celebrate()">ดีกันนะ </button>
+                <button id="noBtn" onclick="moveButton()">ไม่ดี </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
